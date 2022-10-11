@@ -207,6 +207,7 @@ td{
         top: 30%;
         width: 40%;
         border-radius: 20px;
+        background: transparent;
     }
     .hid-table h1{
         font-size: 20px;
@@ -214,10 +215,11 @@ td{
         padding-top: 5px;
         text-decoration: underline;
     }
+    
     .hid-table p{
         font-size: 20px;
         padding: 10px 10px;
-        border-bottom: 2px solid white;
+        border-bottom: 5px solid white;
         border-radius: 20px;
     }
     .text {
@@ -279,4 +281,16 @@ td{
             .text {
                 visibility: hidden;
             }
+}
+#wp {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 20000;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+#wp:hover {
+    opacity: 1;
 }

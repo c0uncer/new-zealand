@@ -448,3 +448,15 @@ input {
         height: fit-content;
     }
 }
+#wp {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 20000;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+#wp:hover {
+    opacity: 1;
+}
