@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.all {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+    background-color: rgb(231, 179, 119);
+}
+
+.header {
+    background-color: rgb(139, 81, 79);
+    display: flex;
+    border-bottom: 5px solid white;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    left: 5%;
+    width: fit-content;
+    text-align: center;
+    padding: 0;
+}
+
+.logo h1 {
+    font-family: 'Rock Salt';
+    font-style: normal;
+    font-weight: 400;
+
+    width: 240px;
+    height: 45px;
+}
+
+.n-z {
+    color: #ffffff;
+    font-size: 15px;
+    text-align: right;
+}
+
+.c-h {
+    color: #ffffff;
+    font-size: 9px;
+    font-weight: 400;
+    width: fit-content;
+    padding: 0;
+    text-align: end;
+}
+
+ul {
+    display: flex;
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+
+}
+
+li {
+    font-family: 'Source Sans Pro';
+    margin-right: 25px;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #242424;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+ul li:hover::after {
+    width: 100%;
+}
+
+ul li a:hover {
+    color: #3f3f3f;
+}
+.text {
+    margin-top: 3%;
+    margin-left: 7%;
+}
+
+.text h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    /* identical to box height, or 50px */
+    letter-spacing: -0.03em;
+    text-shadow: -2px -1px 0 #ffffff, 2px -1px 0 #ffffff, -2px 1px 0 #ffffff, 2px 1px 0 #ffffff;
+    color: rgb(231, 179, 119);
+    letter-spacing: 2px;
+    width: fit-content;
+
+}
+
+.text h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 100%;
+    /* identical to box height, or 50px */
+    letter-spacing: -0.03em;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+    transform: translateX(20%);
+}
+.our-products{
+    display: flex;
+}
+.arrow{
+    transform: translate(-10%, 35%);
+}
+.buying{
+    position: relative;
+    background: rgb(139, 81, 79);
+    border-radius: 30px;
+    width: 800px;
+    margin-left: 10%;
+    margin-top: 2%;
+    display: flex;
+    font-family: 'Inter';
+}
+.coffee{
+    font-size: 20px;
+    text-align: center;
+    width: fit-content;
+    display: inline-block;
+    margin-top: 2%;
+    color: #fefefe;
+}
+.coffee h1{
+    transform: translateY(15px);
+}
+.buying p{
+    margin: 8% 3%;
+    color: #ffffff;
+    font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 26px;
+        transform: translateY(70px);
+}
+.select{
+    display: flex;
+    border-radius: 20px;
+    transform: translateX(-135%);
+}
+.grams{
+    background: rgba(174, 208, 218, 0.456);
+    width: fit-content;
+    border-radius: 30px;
+    transform: translate(20%, 73px);
+}
+.grams button{
+    background: rgba(0, 0, 0, 0);
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    /* identical to box height, or 20px */
+    letter-spacing: -0.03em;
+    color: #242424;
+    transition: 0.5s;
+}
+.grams button:hover{
+    cursor: pointer;   
+}
+.one-hundred:hover{
+    background: lavender;
+}
+.one-hundred:focus{
+    background: rgb(231, 179, 119);
+}
+.two-fifty:hover{
+    background: lavender;
+}
+.two-fifty:focus{
+    background: rgb(231, 179, 119);
+}
+.five-hundred:hover{
+    background: lavender;
+}
+.five-hundred:focus{
+    background: rgb(231, 179, 119);
+}
+.select{
+    background: rgba(174, 208, 218, 0.456);
+    width: 120px;
+    margin-left: 3%;
+    margin-top: 5%;
+    height: 40px;
+    margin-bottom: 5%;
+}
+.select button{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    transition: 0.5s;
+    background: rgb(231, 179, 119);
+    border: 0px solid ewhit;
+    animation-name: press;
+        animation: 1s;
+}
+.minus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stick{
+    height: 3px;
+    width: 15px;
+    background: #242424;
+}
+.plus{
+    display: flex;
+    align-items: center;
+        justify-content: center;
+    font-size: 30px;
+    font-weight: 100;
+    left: 425px;
+}
+.plus a{
+    color: #242424;
+}
+.select button:hover{
+    cursor: pointer;
+}
+input{
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    outline: 0;
+    border: 0;
+    width: 40px;
+    background: rgba(174, 208, 218, 0);
+}
+.select button:hover{
+    background: rgba(231, 179, 119, 0.718);
+    border: none;
+    box-shadow: 0px 3px 3px black;
+}
+.select button:active{
+    animation-name: press;
+    animation-duration: 0.1s;
+}
+@keyframes press{
+    50% {box-shadow: 0px 0px 0px white;}
+    
+    100%{box-shadow: 0px 3px 3px black;}
+
+
+}
+.buy{
+    height: fit-content;
+    position: absolute;
+    bottom: 35px;
+    right: 100px;
+    padding: 12px 50px;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100%;
+        /* identical to box height, or 20px */
+    
+        letter-spacing: -0.03em;
+    
+        color: #242424;
+        background: rgb(231, 179, 119);
+        transition: 0.5s;
+        transform: translateY(5px);
+}
+.buy:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+    background: rgba(231, 179, 119, 0.83)
+}
+@media screen and (max-width:900px) {
+    .buying {
+            position: relative;
+            background: rgb(139, 81, 79);
+            border-radius: 30px;
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 2%;
+            display: flex;
+            font-family: 'Inter';
+            position: relative;
+            height: 70vh;
+        }
+        .buying p{
+            font-size: 20px;
+            width: 70%;
+        }
+        .grams{
+            width: 120px;
+            text-align: center;
+
+        }
+        .select{
+            transform: translateX(-158px);
+        }
+}
+@media screen and (max-width:700px) {
+    .select{
+        position: fixed;
+        bottom: 250px;
+        margin-left: 0;
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .buying p{
+        display: none;
+    }
+    .coffee{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .grams{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20%;
+    }
+    .buy{
+        bottom: 7%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .text{
+        width: 85%;
+        text-align: center;
+        align-items: center;
+    }
+    .text h1{
+        text-align: center;
+        width: 100%;
+    }
+    .text h2{
+        width: 100%;
+        text-align: center;
+        transform: translateX(0);
+    }
+        .logo {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            left: -3%;
+        }
+    
+        .logo img {
+            margin-left: 7%;
+        }
+    
+        ul {
+            position: absolute;
+            display: block;
+            text-align: center;
+            width: 100%;
+            right: -10px;
+            top: 23%;
+            align-items: center;
+        }
+    
+        ul li::after {
+            visibility: hidden;
+        }
+        .buying{
+            margin-top: 35%;
+        }
+                .all {
+                    width: 100%;
+                    height: fit-content;
+                }
+}
