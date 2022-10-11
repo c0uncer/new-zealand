@@ -341,11 +341,10 @@ input{
 @media screen and (max-width:700px) {
     .select{
         position: fixed;
-        bottom: 250px;
-        margin-left: 0;
+        margin-top: 75%;
         display: flex;
         position: absolute;
-        left: 50%;
+        left: 47%;
         transform: translateX(-50%);
     }
     .buying p{
@@ -360,24 +359,33 @@ input{
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        bottom: 20%;
+        margin-top: 95%;
+        height: 100px;
+    }
+    .grams button{
+        font-size: 15px;
     }
     .buy{
-        bottom: 7%;
+        position: absolute;
+        margin-top: 150%;
         right: 50%;
+        bottom: 0;
         transform: translateX(50%);
     }
     .text{
         width: 85%;
         text-align: center;
         align-items: center;
+        margin-top: -8px;
     }
     .text h1{
         text-align: center;
         width: 100%;
+        font-size: 30px;
     }
     .text h2{
         width: 100%;
+        font-size: 30px;
         text-align: center;
         transform: translateX(0);
     }
@@ -397,19 +405,23 @@ input{
             display: block;
             text-align: center;
             width: 100%;
-            right: -10px;
-            top: 23%;
+            right: 0;
+            top: 22%;
             align-items: center;
+            transform: translateX(10px);
         }
     
         ul li::after {
             visibility: hidden;
         }
         .buying{
-            margin-top: 35%;
+            margin-top: 45%;
         }
                 .all {
                     width: 100%;
                     height: fit-content;
                 }
+    .coffee h1{
+        font-size: 20px;
+    }
 }
