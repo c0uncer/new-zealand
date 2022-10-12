@@ -12,7 +12,6 @@
     z-index: -1;
     background-color: rgb(231, 179, 119);
 }
-
 .contact-img{
     opacity: 0.1;
     position: absolute;
@@ -128,7 +127,7 @@
     }
 }
 .footer {
-    margin-top: 16rem;
+    margin-top: 5rem;
     height: 8rem;
     background-color: rgb(139, 81, 79);
     padding-top: 1rem;
@@ -415,7 +414,7 @@ a {
         flex-direction: column;
     }
     .footer {
-    margin-top: 16rem;
+    margin-top: 5rem;
     height: fit-content;
     background-color: rgb(139, 81, 79);
     padding-top: 1rem;
@@ -426,7 +425,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-}
+    }
 
 .footer {
     font-family: 'Source Sans Pro';
@@ -585,7 +584,12 @@ a {
         width: 50px;
         height: 50px;
     }
-
+    .footer-social{
+        transform: translateX(-48px);
+    }
+    .footer-address{
+        transform: translateX(-25px);
+    }
     
 }
 .quote{
@@ -597,6 +601,9 @@ a {
 @media screen and (max-width: 500px) {
     ul li {
         margin-top: 25%;
+    }
+    .language-switch{
+        transform: translateX(15px);
     }
 }
 
@@ -1354,6 +1361,8 @@ a {
 
 .info-section-header {
     font-size: 1.4rem;
+    margin-bottom: 10px;
+    
 }
 
 .phone {
@@ -1437,7 +1446,7 @@ input {
 .message input {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    width: 6rem;
+    width: 10rem;
     margin-top: 1.2rem;
     background: rgb(231, 179, 119);
     font-family: 'Source Sans Pro';
@@ -1532,16 +1541,16 @@ textarea {
         width: 100px;
         left: 43%;
         rotate: 135deg;
-        top: 20%;
+        top: 260%;
     }
     #mail-img{
-        top: 20%;
+        top: 250%;
         width: 100px;
         height: 100px;
         left: 65%;
     }
     #pin-img{
-        top: 20%;
+        top: 250%;
         width: 100px;
         height: 100px;
         left: 23%;
@@ -1769,7 +1778,7 @@ textarea {
 
     .message input {
         position: relative;
-        width: 80px;
+        width: 100px;
         right: 0;
         margin-top: 15px;
     }
