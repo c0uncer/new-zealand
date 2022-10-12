@@ -361,7 +361,7 @@ ul li a:hover{
             z-index: 21;
         }
         ul li{
-            margin-top: 25%;
+            margin-top: 15%;
             margin-left: 5%;
         }
         ul li::after {
@@ -396,5 +396,10 @@ ul li a:hover{
     }
     .second{
         width: 300px;
+    }
+}
+@media screen and (max-width: 500px) {
+    ul li{
+        margin-top: 25%;
     }
 }

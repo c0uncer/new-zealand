@@ -214,6 +214,7 @@ td{
         padding: 10px 10px;
         padding-top: 5px;
         text-decoration: underline;
+        margin-top: 20px;
     }
     
     .hid-table p{
@@ -322,9 +323,21 @@ td{
     }
     .img-3{
         left:200px;
+        left: 0px;
+        transform: translate(0);
+        bottom:40%;
+        left: 60%;
+        width: 150px;
+        height: 150px;
     }
     .img-2{
-        display: none;
+        width: 150px;
+        height: 150px;
+        display: non;
+        transform: translate(0);
+        bottom: 0%;
+        left: 5%;
+
     }
     .hid-table{
         width: 60%;
@@ -332,10 +345,10 @@ td{
 }
 @media screen and (max-width:660px) {
             .img-3{
-                display: none;
+                visibility: visible;
             }
             .img-1{
-                display: none;
+                left: 10%;
             }
             .logo img {
                 margin-left: 7%;
