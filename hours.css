@@ -341,6 +341,7 @@ td{
     }
     .hid-table{
         width: 60%;
+        font-family: 'Inter';
     }
 }
 @media screen and (max-width:660px) {
