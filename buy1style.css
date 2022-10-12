@@ -339,6 +339,10 @@ input{
         }
 }
 @media screen and (max-width:700px) {
+    #wp {
+            width: 50px;
+            height: 50px;
+        }
     .select{
         position: fixed;
         margin-top: 75%;
