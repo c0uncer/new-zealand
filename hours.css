@@ -204,7 +204,7 @@ td{
         visibility: visible;
         left: 50%;
         transform: translateX(-50%);
-        top: 30%;
+        top: 25%;
         width: 40%;
         border-radius: 20px;
         background: transparent;
@@ -223,6 +223,7 @@ td{
         border-radius: 20px;
     }
     .text {
+        position: absolute;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -244,17 +245,75 @@ td{
             position: absolute;
             display: block;
             text-align: center;
-            width: 93%;
+            width: 95%;
             right: 0;
-            top: 14%;
+            top: 25%;
             align-items: center;
         }
     
         ul li::after {
             visibility: hidden;
         }
+                ul {
+                    position: fixed;
+                    display: block;
+                    text-align: center;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgb(139, 81, 79);
+                    color: rgb(255, 255, 255);
+                    right: 0;
+                    top: 0;
+                    align-items: center;
+                    visibility: hidden;
+                    z-index: 21;
+                }
+        
+                ul li {
+                    margin-top: 25%;
+                    margin-left: 5%;
+                }
+        
+                ul li::after {
+                    visibility: hidden;
+                }
+        
+                ul li a {
+                    color: rgba(255, 255, 255, 0);
+                    transition: 0s;
+                }
+        
+                #check:checked~ul {
+                    visibility: visible;
+                }
+        
+                #check:checked~ul li a {
+                    color: white;
+                }
+        
+                #check {
+                    display: none;
+                }
+        
+                #menu {
+                    position: absolute;
+                    top: 30px;
+                    right: 20px;
+                    z-index: 20000;
+                }
         .text{
-            visibility: hidden;
+            visibility: visible;
+
+            width: 100%;
+            left: 0px;
+            margin-top: 0;
+            margin: 0;
+        }
+        .text h1{
+            font-size: 35px;
+        }
+        .text h2{
+            font-size: 35px;
         }
 }
 @media screen and (max-width:1060px) {
@@ -282,7 +341,7 @@ td{
                 margin-left: 7%;
             }
             .text {
-                visibility: hidden;
+                visibility: visible
             }
 }
 #wp {

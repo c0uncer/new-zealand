@@ -322,6 +322,7 @@ textarea{
         }
 }
 @media screen and (max-width:900px) {
+    
     #pin-img{
         display: none;
     }
@@ -341,19 +342,52 @@ textarea{
         .logo img {
             margin-left: 7%;
         }
-    
         ul {
-            position: absolute;
+            position: fixed;
             display: block;
             text-align: center;
-            width: 95%;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(139, 81, 79);
+            color: rgb(255, 255, 255);
             right: 0;
-            top: 18%;
+            top: 0;
             align-items: center;
+            visibility: hidden;
+            z-index: 21;
+        }
+    
+        ul li {
+            margin-top: 25%;
+            margin-left: 5%;
         }
     
         ul li::after {
             visibility: hidden;
+        }
+    
+        ul li a {
+            color: rgba(255, 255, 255, 0);
+            transition: 0s;
+        }
+    
+        #check:checked~ul {
+            visibility: visible;
+        }
+    
+        #check:checked~ul li a {
+            color: white;
+        }
+    
+        #check {
+            display: none;
+        }
+    
+        #menu {
+            position: absolute;
+            top: 30px;
+            right: 20px;
+            z-index: 20000;
         }
         .page{
             display: block;
@@ -373,7 +407,7 @@ textarea{
                 .info {
                     width: 80%;
                     margin: auto;
-                    margin-top: 45%;
+                    margin-top: 15%;
                     padding-bottom: 35px;
                     color: rgba(255, 255, 255, 0.908);
                     font-family: 'Source Sans Pro';
@@ -476,6 +510,7 @@ textarea{
                     margin: auto;
                     align-items: center;
                     text-align: center;
+                    margin-top: 10%;
                 }
         
                 .text h1 {
