@@ -318,7 +318,7 @@ td{
 }
 @media screen and (max-width:1060px) {
     .all{
-        height: 120vh;
+        height: 150vh;
     }
     .img-3{
         left:200px;
