@@ -4,7 +4,7 @@
     box-sizing: border-box;
     border: 0px;
 }
-.ul{
+ul{
     width: 64%;
 }
 
@@ -394,11 +394,11 @@ a {
     ul li a::active {
             color: blue;
         }
-    #check:checked~.ul {
+    #check:checked~ul {
             visibility: visible;
         }
     
-        #check:checked~.ul li a {
+        #check:checked~ul li a {
             color: white;
         }
     
@@ -555,7 +555,7 @@ a {
         margin-left: 7%;
     }
 
-    .ul{
+    ul{
         position: fixed;
         display: block;
         text-align: left;
@@ -824,7 +824,7 @@ ul li:hover::after {
 
 @media screen and (max-width:1000px) {
     
-    .ul{
+    ul{
             visibility: hidden;
             position: fixed;
             width: 100%;
@@ -895,7 +895,7 @@ ul li:hover::after {
         margin-left: 7%;
     }
 
-    .ul{
+    ul{
         position: absolute;
         display: block;
         text-align: center;
@@ -929,7 +929,7 @@ ul li:hover::after {
         color: rgba(255, 255, 255, 1);
     }
 
-    .ul{
+    ul{
         position: fixed;
         display: block;
         text-align: center;
@@ -957,11 +957,11 @@ ul li:hover::after {
         color: rgba(255, 255, 255, 0);
     }
 
-    #check:checked~.ul {
+    #check:checked~ul {
         visibility: visible;
     }
 
-    #check:checked~.ul li a {
+    #check:checked~ul li a {
         color: white;
     }
 
@@ -1033,7 +1033,7 @@ ul li:hover::after {
     text-align: end;
 }
 
-.ul{
+ul{
     display: flex;
     font-size: 20px;
 }
@@ -1212,7 +1212,7 @@ td {
         border-bottom: 5px solid white;
         border-radius: 20px;
     }
-    #check:checked~.ul li a {
+    #check:checked~ul li a {
         color: white;
     }
 
@@ -1557,6 +1557,9 @@ textarea {
 }
 
 @media screen and (max-width:900px) {
+    .contact-img{
+        display: none;
+    }
     .iceds{
         top: 7%;
     }
@@ -1599,7 +1602,7 @@ textarea {
         height: 50px;
     }
 
-    .ul{
+    ul{
         position: fixed;
         display: block;
         text-align: center;
@@ -1628,11 +1631,11 @@ textarea {
         transition: 0s;
     }
 
-    #check:checked~.ul {
+    #check:checked~ul {
         visibility: visible;
     }
 
-    #check:checked~.ul li a {
+    #check:checked~ul li a {
         color: white;
     }
     
@@ -1833,31 +1836,7 @@ textarea {
 #nav{
     display: none;
 }
-.label-ul label{
-    position: relative;
-    display: block;
-    font-size: 20px;
-    text-align: center;
-    align-items: center;
-    margin: 20% 0;
-}
-.label-ul{
-    left: 0;
-    top: 0;
-    position: absolute;
-    width: 100%;
-    height: 101vh;
-    text-align: center;
+ul:active{
     visibility: hidden;
-}
-#check:checked ~ .label-ul{
-    z-index: 22;
-    visibility: visible;
-}
-#nav:checked ~ .ul{
-    visibility: visible;
-}
-#nav:checked ~ .label-ul{
-    visibility: visible;
 }
 

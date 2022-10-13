@@ -3,11 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+ul{
+    width: 64%;
+}
+#check{
+    display: none;
+}
+#menu{
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    visibility: hidden;
+}
+#wp {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 20;
+    opacity: 0.7;
+    transition: 0.5s;
+}
 
+#wp:hover {
+    opacity: 1;
+}
 .all {
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     z-index: -2;
     background-color: rgb(231, 179, 119);
 }
@@ -143,226 +166,117 @@ ul li a:hover {
     width: fit-content;
     transform: translateX(20%);
 }
-.our-products{
-    display: flex;
-}
-.arrow{
-    transform: translate(-10%, 35%);
-}
-.buying{
-    position: relative;
+
+.product{
+    margin-left: 7%;
     background: rgb(139, 81, 79);
-    border-radius: 30px;
-    width: 800px;
-    margin-left: 10%;
-    margin-top: 2%;
+    height: 400px;
+    width: 60%;
     display: flex;
-    font-family: 'Inter';
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 20px;
 }
 .coffee{
-    font-size: 20px;
+    align-items: center;
     text-align: center;
-    width: fit-content;
-    display: inline-block;
+    width: 300px;
+    font-size: 15px;
+    margin-left: 1%;
     margin-top: 2%;
-    color: #fefefe;
 }
 .coffee h1{
-    transform: translateY(15px);
+    width: 100px;
+    height: 40px;
+    margin:auto;
+    padding-top: 3%;
+    font-family: "Inter";
+    font-size: 25px;
+    color: whitesmoke;
 }
-.buying p{
-    margin: 8% 3%;
-    color: #ffffff;
-    font-family: 'Source Sans Pro';
-        font-style: normal;
-        font-weight: 900;
-        font-size: 20px;
-        line-height: 26px;
-        transform: translateY(70px);
-}
-.select{
-    display: flex;
-    border-radius: 20px;
-    transform: translateX(-135%);
-}
-.grams{
-    background: rgba(174, 208, 218, 0.456);
+.gram-select{
     width: fit-content;
-    border-radius: 30px;
-    transform: translate(20%, 73px);
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    margin-left: 1%;
 }
 .grams button{
-    background: rgba(0, 0, 0, 0);
-    padding: 10px 15px;
     border: 0;
-    border-radius: 30px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 100%;
-    /* identical to box height, or 20px */
-    letter-spacing: -0.03em;
-    color: #242424;
-    transition: 0.5s;
-}
-.grams button:hover{
-    cursor: pointer;   
-}
-.one-hundred:hover{
-    background: lavender;
-}
-.one-hundred:focus{
-    background: rgb(231, 179, 119);
-}
-.two-fifty:hover{
-    background: lavender;
-}
-.two-fifty:focus{
-    background: rgb(231, 179, 119);
-}
-.five-hundred:hover{
-    background: lavender;
-}
-.five-hundred:focus{
-    background: rgb(231, 179, 119);
+    border-radius: 15px;
+    background-color: rgb(231, 179, 119);
+    padding: 8px 15px;
+    margin-bottom: 15%;
 }
 .select{
-    background: rgba(174, 208, 218, 0.456);
-    width: 120px;
-    margin-left: 3%;
-    margin-top: 5%;
-    height: 40px;
-    margin-bottom: 5%;
+    background: rgb(152, 140, 140);
+    border-radius: 20px;
+    width: fit-content;display: flex;
+    margin: auto;
+}
+.select input{
+    width: 30px;
+    height: 30px;
+    border: 0;
+    background: rgb(152, 140, 140);
+    text-align: center;
+    font-size: 20px;
 }
 .select button{
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    border: none;
-    transition: 0.5s;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 0;
+    font-size: 30px;
     background: rgb(231, 179, 119);
-    border: 0px solid ewhit;
-    animation-name: press;
-        animation: 1s;
 }
 .minus{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.stick{
+    width: 18px;
     height: 3px;
-    width: 15px;
-    background: #242424;
-}
-.plus{
-    display: flex;
-    align-items: center;
-        justify-content: center;
-    font-size: 30px;
-    font-weight: 100;
-    left: 425px;
-}
-.plus a{
-    color: #242424;
-}
-.select button:hover{
-    cursor: pointer;
-}
-#wp {
-    position: fixed;
-    bottom: 5%;
-    right: 5%;
-    z-index: 20000;
-    opacity: 0.7;
-    transition: 0.5s;
-}
-
-#wp:hover {
-    opacity: 1;
-}
-input{
+    background:black;
     text-align: center;
-    font-size: 24px;
-    color: black;
-    outline: 0;
+    align-items: center;
+    transform: translateX(9px);
+}
+p{
+    width: 90%;
+    margin: auto;
+    margin-top: 15%;
+    text-align: left;
+    font-family: "Inter";
+    color: whitesmoke;
+    font-size: 18px;
+}
+.right button{
     border: 0;
-    width: 40px;
-    background: rgba(174, 208, 218, 0);
+    border-radius: 15px;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    margin-top: auto;
+    background-color: rgb(231, 179, 119);
+    font-family: "Inter";
+    margin-bottom: 1.5%;
 }
-.select button:hover{
-    background: rgba(231, 179, 119, 0.718);
-    border: none;
-    box-shadow: 0px 3px 3px black;
+.right{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
-.select button:active{
-    animation-name: press;
-    animation-duration: 0.1s;
+.right button:hover{
+    background: rgb(178, 138, 93);
 }
-@keyframes press{
-    50% {box-shadow: 0px 0px 0px white;}
-    
-    100%{box-shadow: 0px 3px 3px black;}
-
-
+.right button:active{
+    background-color: rgb(231, 179, 119);
 }
-.buy{
-    height: fit-content;
-    position: absolute;
-    bottom: 35px;
-    right: 100px;
-    padding: 12px 50px;
-    border: none;
-    border-radius: 30px;
-    font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 100%;
-        /* identical to box height, or 20px */
-    
-        letter-spacing: -0.03em;
-    
-        color: #242424;
-        background: rgb(231, 179, 119);
-        transition: 0.5s;
-        transform: translateY(5px);
+.grams button:hover{
+    background: rgb(178, 138, 93);
 }
-.buy:hover{
-    cursor: pointer;
-    box-shadow: 0px 0px 10px black;
-    background: rgba(231, 179, 119, 0.83)
+.grams button:target{
+    background-color: rgb(231, 179, 119);
 }
-@media screen and (max-width:900px) {
-    
-    
-    .buying {
-            position: relative;
-            background: rgb(139, 81, 79);
-            border-radius: 30px;
-            width: 80%;
-            margin-left: 10%;
-            margin-top: 2%;
-            display: flex;
-            font-family: 'Inter';
-            position: relative;
-            height: 500px;
-        }
-        .buying p{
-            font-size: 20px;
-            width: 70%;
-        }
-        .grams{
-            width: 120px;
-            text-align: center;
-
-        }
-        .select{
-            transform: translateX(-158px);
-        }
-}
-@media screen and (max-width:700px) {
+@media screen and (max-width:980px) {
     .footer {
             margin-top: 5rem;
             height: fit-content;
@@ -386,97 +300,60 @@ input{
     
             color: #fff;
         }
+    p{
+        font-size: 15px;
+    }
+    .coffee{
+        width: 250px;
+    }
+    .gram-select
+    {
+        width: 250px;
+    }
+    .right button{
+        margin-bottom: 15%;
+    }
+}
+@media screen and (max-width:730px) {
+    ul{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(139, 81, 79);
+        right: 0;
+        top: 0;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        visibility: hidden;
+        transition: 0s;
+    }
+    ul li{
+        display: block;
+        line-height: 600%;
+    }
+    ul li::after{
+        display: none;
+    }
+    #menu{
+        visibility: visible;
+        z-index: 20;
+    }
+    #check:checked ~ ul{
+        visibility: visible;
+    }
     #wp {
             width: 50px;
             height: 50px;
         }
-    .select{
-        position: fixed;
-        margin-top: 75%;
-        display: flex;
-        position: absolute;
-        left: 47%;
-        transform: translateX(-50%);
-    }
-    .buying p{
-        display: none;
-    }
-    .coffee{
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .grams{
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-top: 95%;
-        height: 100px;
-    }
-    .grams button{
-        font-size: 15px;
-    }
-    .buy{
-        position: absolute;
-        margin-top: 150%;
-        right: 50%;
-        bottom: 0;
-        transform: translateX(50%);
-        font-size: 15px;
-        text-align: center;
-        margin-bottom: 20px;
-        padding:3% 15%;
-    }
-    .text{
-        width: 85%;
-        text-align: center;
+    .product{
+        flex-direction: column;
+        height: fit-content;
         align-items: center;
-        margin-top: -8px;
+        width: 80%;
     }
-    .text h1{
-        text-align: center;
-        width: 100%;
-        font-size: 30px;
-    }
-    .text h2{
-        width: 100%;
-        font-size: 30px;
-        text-align: center;
-        transform: translateX(0);
-    }
-        .logo {
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-            left: -3%;
-        }
-    
-        .logo img {
-            margin-left: 7%;
-        }
-    
-        ul {
-            position: absolute;
-            display: block;
-            text-align: center;
-            width: 100%;
-            right: 0;
-            top: 18%;
-            align-items: center;
-            transform: translateX(10px);
-        }
-    
-        ul li::after {
-            visibility: hidden;
-        }
-        .buying{
-            margin-top: 25%;
-        }
-                .all {
-                    width: 100%;
-                    height: fit-content;;
-                }
-    .coffee h1{
-        font-size: 19.9px;
+    p{
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 }
