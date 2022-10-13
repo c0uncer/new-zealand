@@ -1796,8 +1796,7 @@ textarea {
         line-height: 50px;
         /* identical to box height, or 50px */
         letter-spacing: -0.03em;
-        color: rgb(231, 179, 119);
-        letter-rgb(255, 255, 255)
+        color: rgb(255, 255, 255);
         width: fit-content;
 
     }
