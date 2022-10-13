@@ -423,7 +423,7 @@ a {
     padding-right: 3rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     }
 
@@ -585,10 +585,10 @@ a {
         height: 50px;
     }
     .footer-social{
-        transform: translateX(-48px);
+        
     }
     .footer-address{
-        transform: translateX(-25px);
+        
     }
     
 }
@@ -1699,9 +1699,8 @@ textarea {
         margin-top: auto;
         margin-bottom: auto;
         margin-right: 10%;
-        text-align: center;
+        margin-left: 10%;
         width: 100%;
-        align-items: center;
     }
 
     .three input {
@@ -1721,7 +1720,7 @@ textarea {
     .message {
         width: 100%;
         display: flex;
-        align-items: center;
+        margin-left: 10%;
     }
 
     .message label {
