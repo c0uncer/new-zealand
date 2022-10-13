@@ -375,6 +375,9 @@ input{
         right: 50%;
         bottom: 0;
         transform: translateX(50%);
+        padding: 10px 30px;
+        font-size: 15px;
+        text-align: center;
     }
     .text{
         width: 85%;
