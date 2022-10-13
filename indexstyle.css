@@ -1855,9 +1855,9 @@ textarea {
     visibility: visible;
 }
 #nav:checked ~ .ul{
-    visibility: hidden;
+    visibility: visible;
 }
 #nav:checked ~ .label-ul{
-    visibility: hidden;
+    visibility: visible;
 }
 
