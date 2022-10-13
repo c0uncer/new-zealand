@@ -11,7 +11,29 @@
     z-index: -2;
     background-color: rgb(231, 179, 119);
 }
+.footer {
+    margin-top: 5rem;
+    height: fit-content;
+    background-color: rgb(139, 81, 79);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.footer {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 25px;
+
+    color: #fff;
+}
 .header {
     background-color: rgb(139, 81, 79);
     display: flex;
@@ -439,7 +461,7 @@ input{
             text-align: center;
             width: 100%;
             right: 0;
-            top: 22%;
+            top: 18%;
             align-items: center;
             transform: translateX(10px);
         }
@@ -457,27 +479,4 @@ input{
     .coffee h1{
         font-size: 19.9px;
     }
-}
-.footer {
-    margin-top: 5rem;
-    height: fit-content;
-    background-color: rgb(139, 81, 79);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.footer {
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 0.8rem;
-    line-height: 25px;
-
-    color: #fff;
 }
