@@ -11,55 +11,83 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Rock+Salt&family=Source+Sans+Pro:wght@200&family=Staatliches&display=swap"
         rel="stylesheet">
-        <link rel="shortcut icon" href="./img/FİNCANLI LOGO.png" />
+    <link rel="shortcut icon" href="./img/FİNCANLI LOGO.png" />
     <title>New Zealand Coffee House</title>
 </head>
 
 <body>
     <div class="all">
-    <section class="header">
-        <a href="https://wa.me/905332353883"><img src="./img/wp-icon.png" alt="" id="wp"></a>
-        <div class="logo">
-            <img src="./img/logo.png" alt="">
-        </div>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-        
-        </ul>
-    </section>
-    <section class="our-products">
-        <div class="text">
-            <h1 class="our">Best</h1>
-            <h2 class="products-text">Coffee</h1>
-        </div>
-    </section>
-    <section class="buying">
-        <div class="coffee">
-            <h1>GEITONAS</h1>
-            <img src="./img/kahve5.svg" alt="">
-        </div>
-        <div>
-            <p>Yunanca da komşu anlamına gelen Geitonas sözcüğünü, kahvenin insanları bir araya getiren özelliğini düşünerek blendimize
-            vermek istedik. Okyanusları aşarak farklı kültürlerdeki insanları bir fincan kahvenin etrafında birleştiren kahveyi;
-            komşuluk, dostluk gibi değerleri yoğun meyve aromalarına karışan çikolata ve kakao notaları ile yudumlarken bir kez daha
-            hatırlayalım dedik. Yalnızca arabika çekirdeklerinden oluşan Geitonas’ı mutlaka denemenizi öneririz.
+        <section class="header">
+            <a href="https://wa.me/905332353883"><img src="./img/wp-icon.png" alt="" id="wp"></a>
+            <input type="checkbox" name="" id="check">
+            <label for="check"><img src="./img/menu.png" alt="" id="menu"></label>
+            <ul>
+                <li><a href="index.html">Hakkımızda</a></li>
+                <li><a href="index-2.html#our-products">Ürünlerimiz</a></li>
+                <li><a href="index-3.html#contact"> İletişim </a></li>
+                <li><a href="index.html" class="language-switch"> Türkçe </a></li>
+                <li><a href="en.html" class="language-switch"> English </a></li>
+            </ul>
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+        </section>
+        <section class="our-products">
+            <div class="text">
+                <h1 class="our">Best</h1>
+                <h2 class="products-text">Coffee</h1>
+            </div>
+        </section>
+        <section class="product">
+            <div>
+                <div class="coffee">
+                    <h1>GEITONAS</h1>
+                    <img src="./img/kahve5.png" alt="">
+                </div>
+                <div class="gram-select">
+                    <div class="grams">
+                        <button>100gr</button>
+                        <button>250gr</button>
+                        <button>500gr</button>
+                    </div>
+                    <div class="select">
+                        <button class="minus-div" onClick="decreaseCount(event,this)">
+                            <div class="minus"></div>
+                        </button>
+                        <input type="text" value="1" name="" id="num">
+                        <button class="plus" onClick="increaseCount(event, this)">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <p>NewZealand Coffee House ile eşsiz tatlara şahit olmaya hazır mısınız ? Afrika’nın farklı
+                    bölgelerinden yalnızca arabika
+                    çekirdekleri ile sizlere sunduğumuz filtre kahvemizi denemeden geçmemelisiniz. Evinizde, işyerinizde
+                    kolayca
+                    demleyebilir ve narenciye, kırmızı meyveler ve kuru üzüm notalarının karışımının verdiği hazza
+                    ulaşabilirsiniz.</p>
+                <a href="https://wa.me/905332353883"><button class="buy">BUY</button></a>
+            </div>
+            <div></div>
+        </section>
+        <section class="footer">
+            <div>
+                <img src="./img/logo.png" alt="">
+                <p> © 2022 New Zealand Coffee House - All rights reserved </p>
+            </div>
+            <div class="footer-social">
+                <p>info@newzealandcoffeehouse.com </p>
+                <p> 0 (532) 168 42 15 </p>
+                <a href="https://www.instagram.com/newzealandcoffeeroasting"> @newzealandcoffeeroasting </a>
+            </div>
+            <div class="footer-address">
+                <p> Türkkuyusu, Hacı Resul Sk. No:11A/B, 48400 </p>
+                <p> Bodrum/Muğla </p>
+            </div>
+            <div>
 
-            </p>
-            <div class="grams">
-                <button class="one-hundred">100gr</button>
-                <button class="two-fifty">250gr</button>
-                <button class="five-hundred">500gr</button>
             </div>
-            <div class="select">
-                <button class="minus" onclick="decreaseCount(event, this)">
-                    <div class="stick"></div>
-                </button>
-                <input type="text" value="1">
-                <button class="plus" onClick="increaseCount(event, this)">+</button>
-            </div>
-        </div>
-        <button class="buy">BUY</button>
-    </section>
+        </section>
     </div>
 
     <script type="text/javascript">

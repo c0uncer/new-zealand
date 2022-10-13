@@ -697,8 +697,8 @@ ul li:hover::after {
     bottom: 25.5px;
     z-index: -1;
 }
-
 .layout-1 {
+    height: fit-content;
     display: flex;
     margin-left: 5%;
     margin-right: 5%;
@@ -707,7 +707,6 @@ ul li:hover::after {
     text-align: center;
     font-family: 'Inter';
 }
-
 .layout-1 p {
     text-align: left;
 }
@@ -730,7 +729,6 @@ ul li:hover::after {
 .of-mine-blend {
     position: relative;
     align-items: center;
-    height: 290.6px;
     display: flex;
     border: 3px solid rgb(139, 81, 79);
     border-radius: 30px;
@@ -739,7 +737,7 @@ ul li:hover::after {
 
 .buy-1 {
     position: absolute;
-    bottom: 20px;
+    bottom: 25px;
     right: 50px;
     padding: 10px 30px;
     border: 0;
@@ -748,10 +746,13 @@ ul li:hover::after {
     color: rgba(255, 255, 255, 0);
     transition: 0.5s;
 }
-
+.buy-1 a{
+    width: 100%;
+    height: 100%;
+}
 .buy-2 {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     right: 50px;
     padding: 10px 30px;
     border: 0;
@@ -854,8 +855,11 @@ ul li:hover::after {
     .layout-1 {
         display: block;
         transform: translateY(25%);
+        margin-top: 15%;
     }
-
+    .of-mine-blend{
+        margin-top: 15%;
+    }
     .layout-1 h1 {
         font-size: 15px;
     }
