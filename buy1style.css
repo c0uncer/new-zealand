@@ -323,7 +323,7 @@ input{
             display: flex;
             font-family: 'Inter';
             position: relative;
-            height: 75vh;
+            height: 500px;
         }
         .buying p{
             font-size: 20px;
@@ -378,7 +378,7 @@ input{
         font-size: 15px;
         text-align: center;
         margin-bottom: 20px;
-        padding:5% 15%;
+        padding:3% 15%;
     }
     .text{
         width: 85%;
