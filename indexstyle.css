@@ -4,7 +4,13 @@
     box-sizing: border-box;
     border: 0px;
 }
+ul {
+    width: 64%;
+}
 
+ul li a:active~ul {
+    visibility: hidden;
+}
 .all {
     position: absolute;
     width: 100%;
@@ -12,6 +18,20 @@
     z-index: -1;
     background-color: rgb(231, 179, 119);
 }
+#check {
+    position: absolute;
+    display: none;
+}
+#menu {
+    visibility: hidden;
+}
+#menu {
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    z-index: 20000;
+}
+
 .contact-img{
     opacity: 0.1;
     position: absolute;
@@ -163,23 +183,8 @@
     font-family: 'Source Sans Pro';
     color: white;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
 }
-
-.language-switch::after {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: rgb(231, 179, 119);
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-
-.language-switch:hover::after {
-    width: 100%;
-}
-
 .n-z {
     color: #ffffff;
     font-size: 15px;
@@ -382,12 +387,29 @@ a {
         margin-top: 15%
 }
 #menu {
-    visibility: hidden;
+    display: none;
 }
 
 @media screen and (max-width:852px) {
+    #check:checked~ul {
+            visibility: visible;
+        }
+    
+        #check:checked~ul li a {
+            color: white;
+        }
+    
+        
+    
+        #menu {
+            display: block;
+            position: fixed;
+            top: 30px;
+            right: 20px;
+            z-index: 20000;
+        }
     .language-switch{
-        font-size: 15px;
+        font-size: 20px;
     }
     .logo img{
         width: 200px;
@@ -448,6 +470,7 @@ a {
 
     .header {
         width: 100%;
+        position: fixed;
     }
 
     .image {
@@ -547,7 +570,7 @@ a {
     ul li {
         height: 12px;
         display: block;
-        margin-top: 15%;
+        margin-top: 10px;
         margin-left: 5%;
     }
 
@@ -574,7 +597,7 @@ a {
 
     #menu {
         visibility: visible;
-        position: absolute;
+        position: fixed;
         top: 30px;
         right: 20px;
         z-index: 20000;
@@ -600,7 +623,7 @@ a {
 
 @media screen and (max-width: 500px) {
     ul li {
-        margin-top: 25%;
+        margin-top: 20%;
     }
     .language-switch{
         transform: translateX(15px);
@@ -798,6 +821,24 @@ ul li:hover::after {
 }
 
 @media screen and (max-width:1000px) {
+    
+    ul {
+            visibility: hidden;
+            position: fixed;
+            width: 100%;
+            left: 0;
+            text-align: center;
+            align-items: center;
+            background-color: rgb(139, 81, 79);
+            height: 101vh;
+        }
+                ul li {
+                    margin-top: 10px
+                }
+                #menu{
+                    visibility: visible;
+                    display: block;
+                }
     .all {
         height: fit-content;
     }
@@ -841,6 +882,7 @@ ul li:hover::after {
     }
 
     .logo {
+        position: absolute;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
@@ -901,7 +943,7 @@ ul li:hover::after {
     }
 
     ul li {
-        margin-top: 25%;
+        margin-top: 10px;
         margin-left: 5%;
     }
 
@@ -926,7 +968,7 @@ ul li:hover::after {
     }
 
     #menu {
-        position: absolute;
+        position: fixed;
         top: 30px;
         right: 20px;
         z-index: 20000;
@@ -991,7 +1033,6 @@ ul li:hover::after {
 
 ul {
     display: flex;
-    right: 15px;
     font-size: 20px;
 }
 
@@ -1169,20 +1210,6 @@ td {
         border-bottom: 5px solid white;
         border-radius: 20px;
     }
-
-    
-
-    .logo {
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        left: -3%;
-    }
-
-    .logo img {
-        margin-left: 7%;
-    }
-
     #check:checked~ul li a {
         color: white;
     }
@@ -1192,7 +1219,7 @@ td {
     }
 
     #menu {
-        position: absolute;
+        position: fixed;
         top: 30px;
         right: 20px;
         z-index: 20000;
@@ -1309,6 +1336,7 @@ td {
     padding-top: 0.4rem;
     position: fixed;
     z-index: 90000000;
+    height: 100px;
 }
 
 .logo {
@@ -1489,7 +1517,7 @@ textarea {
 
     .header {
         width: 100%;
-        position: relative;
+        position: fixed;
     }
     .message input {
         bottom: -5px;
@@ -1585,7 +1613,7 @@ textarea {
     }
 
     ul li {
-        margin-top: 25%;
+        margin-top: 80px;
         margin-left: 5%;
     }
 
@@ -1611,7 +1639,7 @@ textarea {
     }
 
     #menu {
-        position: absolute;
+        position: fixed;
         top: 30px;
         right: 20px;
         z-index: 20000;
