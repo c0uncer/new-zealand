@@ -147,8 +147,7 @@ ul li a:hover {
     line-height: 50px;
     /* identical to box height, or 50px */
     letter-spacing: -0.03em;
-    text-shadow: -2px -1px 0 #ffffff, 2px -1px 0 #ffffff, -2px 1px 0 #ffffff, 2px 1px 0 #ffffff;
-    color: rgb(231, 179, 119);
+    color: rgb(255, 255, 255);
     letter-spacing: 2px;
     width: fit-content;
 
@@ -256,7 +255,7 @@ p{
     margin-top: auto;
     background-color: rgb(231, 179, 119);
     font-family: "Inter";
-    margin-bottom: 1.5%;
+    margin-bottom: 10%;
 }
 .right{
     align-items: center;

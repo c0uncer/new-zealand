@@ -57,7 +57,7 @@ ul{
     width: 100%;
     align-items: center;
     text-align: center;
-    opacity: 0.15;
+    opacity: 0.1;
     height: 70vh;
 }
 .iceds img{
@@ -889,9 +889,9 @@ ul li:hover::after {
 
     .logo {
         position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
         left: -3%;
     }
 
@@ -1072,8 +1072,7 @@ ul li:hover::after {
     line-height: 50px;
     /* identical to box height, or 50px */
     letter-spacing: -0.03em;
-    text-shadow: -2px -1px 0 #ffffff, 2px -1px 0 #ffffff, -2px 1px 0 #ffffff, 2px 1px 0 #ffffff;
-    color: rgb(231, 179, 119);
+    color: rgb(255, 255, 255);
     letter-spacing: 2px;
     width: fit-content;
 
@@ -1561,6 +1560,12 @@ textarea {
 }
 
 @media screen and (max-width:900px) {
+    #contact{
+        transform: translateY(50%);
+    }
+    #our-products{
+        transform: translateY(250%);
+    }
     .contact-img{
         display: none;
     }
@@ -1791,9 +1796,8 @@ textarea {
         line-height: 50px;
         /* identical to box height, or 50px */
         letter-spacing: -0.03em;
-        text-shadow: -2px -1px 0 #ffffff, 2px -1px 0 #ffffff, -2px 1px 0 #ffffff, 2px 1px 0 #ffffff;
         color: rgb(231, 179, 119);
-        letter-spacing: 2px;
+        letter-rgb(255, 255, 255)
         width: fit-content;
 
     }
@@ -1843,4 +1847,9 @@ textarea {
 ul:active{
     visibility: hidden;
 }
-
+.about h1{
+    color: whitesmoke;
+}
+.quote{
+    color: white;
+}

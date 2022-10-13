@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/buy1style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Rock+Salt&family=Source+Sans+Pro:wght@200&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./img/FİNCANLI LOGO.png" />
+    <title>New Zealand Coffee House</title>
+</head>
+
+<body>
+    <div class="all">
+        <section class="header">
+            <a href="https://wa.me/905332353883"><img src="./img/wp-icon.png" alt="" id="wp"></a>
+            <input type="checkbox" name="" id="check">
+            <label for="check"><img src="./img/menu.png" alt="" id="menu"></label>
+            <ul>
+                <li><a href="en.html">About Us</a></li>
+                <li><a href="en.html#our-products">Products</a></li>
+                <li><a href="en.html#contact"> Contact </a></li>
+                <li><a href="index.html" class="language-switch"> Turkish </a></li>
+                <li><a href="en.html" class="language-switch"> English </a></li>
+            </ul>
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+        </section>
+        <section class="our-products">
+            <div class="text">
+                <h1 class="our">Best</h1>
+                <h2 class="products-text">Coffee</h1>
+            </div>
+        </section>
+        <section class="product">
+            <div>
+                <div class="coffee">
+                    <h1>TURKISH COFFEE</h1>
+                    <img src="./img/kahve6.png" alt="">
+                </div>
+                <div class="gram-select">
+                    <div class="grams">
+                        <button>100gr</button>
+                        <button>250gr</button>
+                        <button>500gr</button>
+                    </div>
+                    <div class="select">
+                        <button class="minus-div" onClick="decreaseCount(event,this)">
+                            <div class="minus"></div>
+                        </button>
+                        <input type="text" value="1" name="" id="num">
+                        <button class="plus" onClick="increaseCount(event, this)">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <p>We wanted to force the boundaries of the usual tastes with our Turkish Coffee, which consists of arabica beans only,
+                making a more aromatic Turkish Coffee. We brought together the best beans in Africa and South America, mixing the
+                chocolate and hazelnut-like flavors with citrus.</p>
+                <a href="https://wa.me/905332353883"><button class="buy">BUY</button></a>
+            </div>
+            <div></div>
+        </section>
+        <section class="footer">
+            <div>
+                <img src="./img/logo.png" alt="">
+                <p> © 2022 New Zealand Coffee House - All rights reserved </p>
+            </div>
+            <div class="footer-social">
+                <p>info@newzealandcoffeehouse.com </p>
+                <p> 0 (532) 168 42 15 </p>
+                <a href="https://www.instagram.com/newzealandcoffeeroasting"> @newzealandcoffeeroasting </a>
+            </div>
+            <div class="footer-address">
+                <p> Türkkuyusu, Hacı Resul Sk. No:11A/B, 48400 </p>
+                <p> Bodrum/Muğla </p>
+            </div>
+            <div>
+
+            </div>
+        </section>
+    </div>
+
+    <script type="text/javascript">
+        function increaseCount(a, b) {
+            var input = b.previousElementSibling;
+            var value = parseInt(input.value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            input.value = value;
+        }
+        function decreaseCount(a, b) {
+            var input = b.nextElementSibling;
+            var value = parseInt(input.value, 10);
+            if (value > 1) {
+                value = isNaN(value) ? 0 : value;
+                value--;
+                input.value = value;
+            }
+        }
+    </script>
+</body>
+
+</html>
