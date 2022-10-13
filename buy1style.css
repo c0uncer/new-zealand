@@ -323,7 +323,7 @@ input{
             display: flex;
             font-family: 'Inter';
             position: relative;
-            height: 70vh;
+            height: 75vh;
         }
         .buying p{
             font-size: 20px;
@@ -375,9 +375,9 @@ input{
         right: 50%;
         bottom: 0;
         transform: translateX(50%);
-        padding: 10px 30px;
         font-size: 15px;
         text-align: center;
+        margin-bottom: 20px;
     }
     .text{
         width: 85%;
@@ -413,7 +413,7 @@ input{
             text-align: center;
             width: 100%;
             right: 0;
-            top: 22%;
+            top: 25%;
             align-items: center;
             transform: translateX(10px);
         }
@@ -422,7 +422,7 @@ input{
             visibility: hidden;
         }
         .buying{
-            margin-top: 45%;
+            margin-top: 25%;
         }
                 .all {
                     width: 100%;
