@@ -1866,3 +1866,9 @@ ul:active{
 .quote{
     color: white;
 }
+.contact-img{
+    z-index: -1;
+}
+.iceds{
+    z-index: -1;
+}
