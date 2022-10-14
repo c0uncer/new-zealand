@@ -1875,3 +1875,19 @@ ul:active{
 .footer-social a:hover{
     color: rgba(230, 119, 230, 0.415);
 }
+.message-div label{
+    display: block;
+    margin-left: 10%;
+}
+.message-div textarea{
+    height: 210px;
+    margin-left: 10%;
+}
+#submit{
+    margin-top: 5%;
+    margin-left: 10%;
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+    font-size: 20px;
+    background: rgb(231, 179, 119);
+}

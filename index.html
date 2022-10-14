@@ -210,11 +210,11 @@
                         <label for="phone" id="phone-label"> Telefon Numarası </label>
                         <input type="text" id="phone" name="phone">
                     </form>
-                    <form action="" class="message" name="message" method="POST" data-netlify="true" enctype="application/x-www-form-urlencoded" netlify-honeypot="bot-field">
+                    <div class="message-div">
                         <label for="msg"> Mesaj </label>
                         <textarea name="message" id="msg" cols="30"></textarea>
-                        <input type="submit" value="Gönder" id="submit">
-                    </form>
+                        <input type="submit" value="Gönder" id="submit" onClick="gotowhatsapp()">
+                    </div>
             </div>
         </section>
         <section class="footer">
@@ -236,6 +236,35 @@
             </div>
         </section>
     </div>
+
+    <script>
+        function gotowhatsapp() {
+            var name = document.getElementById("name").value;
+            var phone = document.getElementById("mail").value;
+            var email = document.getElementById("phone").value;
+            var service = document.getElementById("msg").value;
+
+            var url =
+                "https://wa.me/905352694563?text=" +
+                "İsim: " +
+                name +
+                "%0a" +
+                "Email: " +
+                phone +
+                "%0a" +
+                "Tel No: " +
+                email +
+                "%0a" +
+                "Mesaj: " +
+                service;
+
+            window.open(url, "_blank").focus();
+        }
+    </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
 </html>

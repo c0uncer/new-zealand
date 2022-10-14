@@ -176,40 +176,70 @@
                 </div>
             </div>
             <div class="form">
-                <form action="" class="three" name="contact" method="POST" data-netlify="true">
-                    <label for="name" id="name-label"> Name </label>
-                    <input type="text" id="name">
-                    <label for="mail" id="mail-label"> E-Mail </label>
-                    <input type="text" name="" id="mail">
-                    <label for="phone" id="phone-label"> Phone Number </label>
-                    <input type="text" id="phone">
+                <form action="" class="three" name="contact-2" method="POST" data-netlify="true"
+                    enctype="application/x-www-form-urlencoded" netlify-honeypot="bot-field">
+                    <label for="name" id="name-label"> İsim </label>
+                    <input type="text" id="name" name="name">
+                    <label for="mail" id="mail-label"> E-Posta </label>
+                    <input type="text" name="" id="mail" name="mail">
+                    <label for="phone" id="phone-label"> Telefon Numarası </label>
+                    <input type="text" id="phone" name="phone">
                 </form>
-                <form action="" class="message" name="message" method="POST" data-netlify="true">
-                    <label for="msg"> Message </label>
-                    <textarea name="" id="msg" cols="30"></textarea>
-                    <input type="submit" value="Submit">
-                </form>
+                <div class="message-div">
+                    <label for="msg"> Mesaj </label>
+                    <textarea name="message" id="msg" cols="30"></textarea>
+                    <input type="submit" value="Gönder" id="submit" onClick="gotowhatsapp()">
+                </div>
             </div>
-        </section>
-        <section class="footer">
-            <div>
-                <img src="./img/logo.png" alt="">
-                <p> © 2022 New Zealand Coffee House - All rights reserved </p>
+            </section>
+            <section class="footer">
+                <div>
+                    <img src="./img/logo.png" alt="">
+                    <p> © 2022 New Zealand Coffee House - All rights reserved </p>
+                </div>
+                <div class="footer-social">
+                    <p> info@newzealandcoffeehouse.com </p>
+                    <p> 0 (533) 235 38 83</p>
+                    <a href="https://www.instagram.com/newzealandcoffeeroasting"> @newzealandcoffeeroasting </a>
+                </div>
+                <div class="footer-address">
+                    <p> Türkkuyusu, Hacı Resul Sk. No:11A/B, 48400 </p>
+                    <p> Bodrum/Muğla </p>
+                </div>
+                <div>
+            
+                </div>
+            </section>
             </div>
-            <div class="footer-social">
-                <p> info@newzealandcoffeehouse.com </p>
-                <p> 0 (533) 235 38 83</p>
-                <a href="https://www.instagram.com/newzealandcoffeeroasting"> @newzealandcoffeeroasting </a>
-            </div>
-            <div class="footer-address">
-                <p> Türkkuyusu, Hacı Resul Sk. No:11A/B, 48400 </p>
-                <p> Bodrum/Muğla </p>
-            </div>
-            <div>
+            
+            <script>
+                function gotowhatsapp() {
+                    var name = document.getElementById("name").value;
+                    var phone = document.getElementById("mail").value;
+                    var email = document.getElementById("phone").value;
+                    var service = document.getElementById("msg").value;
 
-            </div>
-        </section>
-    </div>
+                    var url =
+                        "https://wa.me/905352694563?text=" +
+                        "İsim: " +
+                        name +
+                        "%0a" +
+                        "Email: " +
+                        phone +
+                        "%0a" +
+                        "Tel No: " +
+                        email +
+                        "%0a" +
+                        "Mesaj: " +
+                        service;
+
+                    window.open(url, "_blank").focus();
+                }
+            </script>
+            
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
 </html>
