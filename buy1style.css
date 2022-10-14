@@ -143,11 +143,11 @@ ul li a:hover {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 45px;
     line-height: 50px;
     /* identical to box height, or 50px */
     letter-spacing: -0.03em;
-    color: rgb(255, 255, 255);
+    color: whitesmoke;
     letter-spacing: 2px;
     width: fit-content;
 
@@ -157,11 +157,11 @@ ul li a:hover {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 45px;
     line-height: 100%;
     /* identical to box height, or 50px */
     letter-spacing: -0.03em;
-    color: rgb(255, 255, 255);
+    color: whitesmoke;
     width: fit-content;
     transform: translateX(20%);
 }

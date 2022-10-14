@@ -1068,11 +1068,11 @@ ul li:hover::after {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 45px;
     line-height: 50px;
     /* identical to box height, or 50px */
     letter-spacing: -0.03em;
-    color: rgb(255, 255, 255);
+    color: whitesmoke;
     letter-spacing: 2px;
     width: fit-content;
 
@@ -1082,11 +1082,11 @@ ul li:hover::after {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 45px;
     line-height: 100%;
     /* identical to box height, or 50px */
     letter-spacing: -0.03em;
-    color: rgb(255, 255, 255);
+    color: whitesmoke;
     width: fit-content;
 }
 
@@ -1792,11 +1792,11 @@ textarea {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 50px;
+        font-size: 35px;
         line-height: 50px;
         /* identical to box height, or 50px */
         letter-spacing: -0.03em;
-        color: rgb(255, 255, 255);
+        color: whitesmoke;
         width: fit-content;
 
     }
@@ -1805,11 +1805,11 @@ textarea {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 50px;
-        line-height: 100%;
+        font-size: 35px;
+        line-height: 50px;
         /* identical to box height, or 50px */
         letter-spacing: -0.03em;
-        color: rgb(255, 255, 255);
+        color: whitesmoke;
         width: fit-content;
         transform: translateX(0);
         text-align: center;
