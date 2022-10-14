@@ -1793,7 +1793,7 @@ textarea {
         font-style: normal;
         font-weight: 700;
         font-size: 35px;
-        line-height: 50px;
+        line-height: 0px;
         /* identical to box height, or 50px */
         letter-spacing: -0.03em;
         color: whitesmoke;
@@ -1806,13 +1806,16 @@ textarea {
         font-style: normal;
         font-weight: 700;
         font-size: 35px;
-        line-height: 50px;
+        line-height: 80px;
         /* identical to box height, or 50px */
         letter-spacing: -0.03em;
         color: whitesmoke;
         width: fit-content;
         transform: translateX(0);
         text-align: center;
+    }
+    .page{
+        margin-top: 0;
     }
 
     .message input {
