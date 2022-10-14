@@ -609,12 +609,6 @@ a {
         width: 50px;
         height: 50px;
     }
-    .footer-social{
-        
-    }
-    .footer-address{
-        
-    }
     
 }
 .quote{
@@ -1571,6 +1565,12 @@ textarea {
 }
 
 @media screen and (max-width:900px) {
+    #urunlerimiz{
+        transform: translateY(-120px);
+    }
+    .coffees{
+        transform: translateY(-120px);
+    }
     #contact{
         transform: translateY(50%);
     }
@@ -1871,4 +1871,7 @@ ul:active{
 }
 .iceds{
     z-index: -1;
+}
+.footer-social a:hover{
+    color: rgba(230, 119, 230, 0.415);
 }

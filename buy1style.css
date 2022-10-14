@@ -268,11 +268,8 @@ p{
 .right button:active{
     background-color: rgb(231, 179, 119);
 }
-.grams button:hover{
-    background: rgb(178, 138, 93);
-}
-.grams button:target{
-    background-color: rgb(231, 179, 119);
+.gram-button:target{
+    background: white;
 }
 @media screen and (max-width:980px) {
     .footer {
@@ -354,4 +351,13 @@ p{
         margin-top: 5%;
         margin-bottom: 5%;
     }
+}
+.footer-social a:hover {
+    color: rgba(230, 119, 230, 0.415);
+}
+.select .minus-div:active{
+    background: rgba(255, 255, 255, 0.59);
+}
+.select .plus:active{
+    background: rgba(255, 255, 255, 0.59);
 }
