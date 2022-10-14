@@ -868,6 +868,7 @@ ul li:hover::after {
     }
     .of-mine-blend{
         margin-top: 15%;
+        padding-bottom: 30px;
     }
     .layout-1 h1 {
         font-size: 15px;
@@ -882,6 +883,7 @@ ul li:hover::after {
         margin-bottom: 40px;
         width: 90%;
         margin-left: 5%;
+        padding-bottom: 30px;
     }
 
     .of-mine-blend {
